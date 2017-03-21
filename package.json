@@ -1,0 +1,31 @@
+{
+  "name": "t-fp-assoc",
+  "version": "0.1.0",
+  "description": "assoc<A, B>(k: string, v: A, ob: {[k: string]: B}): {[k: string]: B|A}",
+  "typings": "./dist/src/utils.d.ts",
+  "private": false,
+  "directories": {
+    "src": "src",
+    "test": "test"
+  },
+  "main": "./dist/src/utils.js",
+  "scripts": {
+    "test": "tsc && tslint src/**/*.ts test/**/*.ts && ava ./dist/test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/forbesmyester/t-fp-assoc.git"
+  },
+  "devDependencies": {
+    "ava": "^0.18.2",
+    "tslint": "^4.5.1",
+    "typescript": "^2.2.1"
+  },
+  "author": "Matthew Forrester <github.com@speechmarks.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/forbesmyester/ts-fp-assoc/issues"
+  },
+  "homepage": "https://github.com/forbesmyester/ts-fp-assoc#readme",
+  "dependencies": { }
+}
