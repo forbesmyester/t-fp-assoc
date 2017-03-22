@@ -2,8 +2,7 @@ import test from 'ava';
 import assoc from '../src/utils';
 
 test('can assoc', (t) => {
-    t.deepEqual(
-        assoc('a', 1, {b: 2}),
-        {a: 1, b: 2}
-    );
+    let input: {[k: string]: number} = {b: 2};
+    let result = assoc('a', 'one', input);
+    t.deepEqual(result, {a: 'one', b: 2});
 });

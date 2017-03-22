@@ -6,8 +6,10 @@ Simple `assoc()` function wrote in Typescript.
 
     import assoc from 't-fp-assoc';
 
-    > console.log(assoc('a', 1, {b: 2}))
-    {a: 1, b: 2}
+    let input: {[k: string]: number} = {b: 2};
+    let result = assoc('a', 'one', input); // {a: 'one', b: 2}
+
+The type for result is `{ [k: string]: string | number }`.
 
 ## Installation
 
