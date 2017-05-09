@@ -1,6 +1,6 @@
 {
   "name": "t-fp-assoc",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "assoc<A, B>(k: string, v: A, ob: {[k: string]: B}): {[k: string]: B|A}",
   "typings": "./dist/src/utils.d.ts",
   "private": false,
