@@ -1,7 +1,7 @@
 {
   "name": "t-fp-assoc",
   "version": "0.1.1",
-  "description": "assoc<A, B>(k: string, v: A, ob: {[k: string]: B}): {[k: string]: B|A}",
+  "description": "TS `assoc()` which can be used for Intefaces and KV Pairs",
   "typings": "./dist/src/utils.d.ts",
   "private": false,
   "directories": {
