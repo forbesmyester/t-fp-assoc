@@ -1,6 +1,7 @@
 export interface Assoc {
+    <Ob, K extends keyof Ob>(k: K, v: Ob[K], a: Ob): Ob;
     <A, B>(k: string, v: A, ob: {[k: string]: B}): {[k: string]: B|A};
-    <X, K extends keyof X>(k: K, v: X[K], a: X): X;
+    <Ob, V, K extends keyof Ob>(k: string, v: V, a: Ob): Ob & {[k: string]: Ob[K]|V};
 }
 
 let assoc: Assoc = (k, v, ob) => {

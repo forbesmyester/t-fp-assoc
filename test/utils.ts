@@ -9,10 +9,19 @@ test('can assoc kv pairs', (t) => {
 
 interface XX { a: string; b: number; };
 
-test('can assoc typed object', (t) => {
+test('can assoc a known key into an interface', (t) => {
     let xx1: XX = {a: 'str', b: -1};
     let xx2: XX = assoc('b', 10, xx1);
     let result = assoc('a', 'string', xx2);
     t.deepEqual(result, {a: 'string', b: 10});
+});
+
+interface YY extends XX { [k: string]: number|string|null; }
+
+test('can add new keys to an interface', (t) => {
+    let xx1: XX = {a: 'str', b: -1};
+    let result = assoc('c', null, xx1);
+    let expected = {a: 'str', b: -1, c: null};
+    t.deepEqual(result, expected);
 });
 
