@@ -19,13 +19,13 @@
   "devDependencies": {
     "ava": "^0.18.2",
     "tslint": "^4.5.1",
-    "typescript": "^2.2.1"
+    "typescript": "^2.3.0"
   },
   "author": "Matthew Forrester <github.com@speechmarks.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/forbesmyester/ts-fp-assoc/issues"
+    "url": "https://github.com/forbesmyester/t-fp-assoc/issues"
   },
-  "homepage": "https://github.com/forbesmyester/ts-fp-assoc#readme",
+  "homepage": "https://github.com/forbesmyester/t-fp-assoc#readme",
   "dependencies": { }
 }
