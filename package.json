@@ -1,14 +1,14 @@
 {
   "name": "t-fp-assoc",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "TS `assoc()` which can be used for Intefaces and KV Pairs",
-  "typings": "./dist/src/utils.d.ts",
   "private": false,
   "directories": {
     "src": "src",
     "test": "test"
   },
   "main": "./dist/src/utils.js",
+  "types": "./dist/src/utils.d.ts",
   "scripts": {
     "test": "tsc && tslint src/**/*.ts test/**/*.ts && ava ./dist/test/*.js"
   },
@@ -19,7 +19,7 @@
   "devDependencies": {
     "ava": "^0.18.2",
     "tslint": "^4.5.1",
-    "typescript": "^2.3.0"
+    "typescript": "^2.4.1"
   },
   "author": "Matthew Forrester <github.com@speechmarks.com>",
   "license": "MIT",
